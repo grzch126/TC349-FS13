@@ -100,17 +100,13 @@ body{
 	border-top: 10px solid #424242;
 }
 header{
-	background: url(../img/teddybear.jpg);
-	height: 230px;
+	background: url(../img/Book-iPad-wallpaper-Library.jpg);
+	height: 357px;
 	padding: 10px;
 }
-h1, h2, p, ul{
+h1, h2{
 	margin: 0;
 	color: #fff;
-}
-ul{
-	list-style-type: none;
-	padding: 0;
 }
 h1{
 	padding-top: 140px;
@@ -120,41 +116,19 @@ h2{
 	font-weight: normal;
 	color: #fff;
 }
-#map-location {
-	background: #f3f3f3;
+#map-location{
+	background: #e3e3e3;
 	background-position: center;
-	height: 250px;
-	transition: background-image 1s;
+	/* background-image: url(../img/map1.jpg); */
+	height: 150px;
 }
 nav{
 	float: left;
-	width:250px;
+	width: 250px;
 }
-.gallery li {
-	display: inline-block;
-	margin: 0 2% 2% 0;
-	border: 5px solid #fff;
-	box-shadow: 0 0 10px #ccc;
-	transition: border-color .3s
+article{
+	margin-left: 300px;
 }
-.gallery li:hover {
-	border-color: #aeccf9
-}
-
-nav ul{
-	margin: 30px 0 0 40px;
-}
-nav a {
-	color: 424242;
-	text-decoration: none;
-	display: block;
-	padding: 10px;
-	border-top: 1px solid e3e3e3;
-}
-nav a: hover{
-	background: #f3f3f3
-}
-
 
 
 
@@ -278,14 +252,8 @@ nav a: hover{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 600px) {
-	nav {
-	float: none;
-	width: auto;
-	}
-	aritlce {
-		margin: 20px;
-	}
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,

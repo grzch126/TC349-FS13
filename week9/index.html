@@ -23,7 +23,7 @@
 		</header>
 		<div id="map-location" data-0="background-image:url(img/map.jpg);opacity:.5;" data-500="background-image:url(img/map-pin.jpg);opacity:1;" data-800="opacity:.5;">
 		</div>
-		<nav>
+		<nav data-0="position:absolute;top:800px;" data-800="position:absolute;top:800px;" data-1500="position:absolute;top:1550px;">
 			<ul>
 				<li><a href="#about">About</a></li>
 				<li><a href="#portfolio">Portfolio</a></li>
@@ -57,11 +57,25 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/vendor/skrollr.min.js"></script>
+		<script src="js/vendor/skrollr.menu.min.js"></script>
 		<script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 		
 		<script type="text/javascript">
+			if($(window.width() > 600)
 			var s = skrollr.init();
+			skrollr.menu.init(s, {
+    //skrollr will smoothly animate to the new position using `animateTo`.
+    animate: true,
+
+    //The easing function to use.
+    easing: 'sqrt',
+
+    //How long the animation should take in ms.
+    duration: function(currentTop, targetTop) {
+        //By default, the duration is hardcoded at 500ms.
+        return 500;
+});
 		</script>
     </body>
 </html>
