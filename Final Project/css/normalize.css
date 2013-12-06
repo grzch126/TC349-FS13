@@ -122,7 +122,13 @@ a:hover {
  * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
  * and Chrome.
  */
-
+body{
+	background: #ccc;
+	border-top: 5px solid #424242;
+	margin:0;
+	font-family: "Helvetica", sans-serif;
+	line-height: 1.4em;
+}
 h1 {
     font-size: 2em;
     margin: 0.67em 0;

@@ -97,76 +97,26 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body{
-    background: url(../img/tree_bark.png);
-}
-header{
-	background: url(../img/Book-iPad-wallpaper-Library.jpg);
-	height: 357px;
-	padding: 10px;
-}
-h1, h2{
-	color: #fff;
-	font-weight: normal;
-}
-h1{
-	padding-top: 240px;
-}
-h3{
-	font-size: 28px;
-}
-
-section{
-	margin-left: 0, 10%;
-	width: 900px;
-	float: left;
-	font-size: 22px;
-	font-weight:normal;
-}
-ul{
+	border-top: 5px solid #424242;
 	margin: 0;
-	list-style-type: none;
-	padding: 0;
+	font-family: "Helvetica", sans-serif;
+	line-height: 1.4em;
 }
-.gallery li{
-	display: inline-block;
-	margin: 0 2% 2% 0;
-	border: 5px solid #fff;
-	box-shadow: 0 0 10px #ccc;
-	transition: border-color .5s;
-}
-.gallery li:hover{
-	border-color: #aeccf9;
-}
-
-#map-location{
-	background: #f4f4f4;
-	background-position: center;
-	/* background-image: url(../img/map1.jpg); */
-	height: 150px;
-}
-nav{
-	margin-left: 0 10%;
-	width: 300px;
-	font-size:15px;
-	font-weight: normal;
-	float: left;
-	
+h4{
+	margin:0;
+	padding: 20px 15px;
+	background: #aaa;
+	color: #fff;
+	text-shadow: 1px 1px 2px #424242;
 }
 .container{
+	background: #fff;
+	width: 910px;
 	margin: 0 10%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+#hoursandcontact{
+	padding: 15px; 
+}	
 
 
 
