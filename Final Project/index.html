@@ -23,7 +23,7 @@
 		</header>
 		<div id="map-location" data-0="background-image:url(img/map.jpg);opacity:1;" data-200="background-image:url(img/map-pin.jpg);opacity:1;" data-800="opacity:.5;">
 		</div>
-		<nav>
+		<nav data-0="position:absolute;top:800px;" data-800="position:position:absolute;top:800px;" data-1500="position:absolute;top:1550px">
 			<ul>
 				<li><a href="#About">About</a></li>
 				<li><a href="policy.html">Sales and Refund Policy</a></li>
@@ -32,25 +32,41 @@
 				
 			</ul>
 		</nav>
+		<article>
 		<div class="container">
 			<section id="about">
-			<article>
 				<h3 class="r-title">About Our Store</h3>
 				<p>Smile Book Store is a student-run firm, opened for business in 2009. We had three full-time employees and two part times. Connectica Book Store has grown and expanded its selection over those past 4 years. Our Primary mission, as always, is to supply the University community with cheaper textbooks.We offer all undergraduate and graduate textbooks, school supplies and a variety of technical materials.</P>
-			</article>
 			<section id="service">
 				<h3> Service with a smile</h3>
 				<img alt="service" src="img/service-w-a-smile-button.jpg">
 				<p> Our goal is not to have customer service that is not just the best but <em>LEGENDARY</em></p>
-		</section>				
-		</div>	
+		</section>	
+		</div>
+		</article>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="js/vendor/skrollr.min.js"></script>
 		<script src="js/vendor/skrollr.menu.min.js"></script>
 		<script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 		<script type="text/javascript">
+		if ($(window).width() > 600){
 			var s = skrollr.init();
+			
+			skrollr.menu.init(s, {
+			//skrollr will smoothly animate to the new position using `animateTo`.
+			animate: true,
+			
+			//The easing function to use.
+			easing: 'sqrt',
+			
+			//How long the animation should take in ms.
+			duration: function(currentTop, targetTop) {
+				//By default, the duration is hardcoded at 500ms.
+				return 500;
+				},
+				});
+			}
 		</script>
     </body>
 </html>
