@@ -104,14 +104,10 @@ header{
 	height: 230px;
 	padding: 10px;
 }
-h1, h2, p, ul{
+h1, h2, p{
 	margin: 0;
-	color: #fff;
 }
-ul{
-	list-style-type: none;
-	padding: 0;
-}
+
 h1{
 	padding-top: 140px;
 	color: #fff;
@@ -126,9 +122,12 @@ h2{
 	height: 250px;
 	transition: background-image 1s;
 }
-nav{
-	float: left;
-	width:250px;
+nav {
+	width: 250px;
+	float: left;	
+}
+article{
+	margin-left: 300px;
 }
 .gallery li {
 	display: inline-block;
@@ -141,19 +140,6 @@ nav{
 	border-color: #aeccf9
 }
 
-nav ul{
-	margin: 30px 0 0 40px;
-}
-nav a {
-	color: 424242;
-	text-decoration: none;
-	display: block;
-	padding: 10px;
-	border-top: 1px solid e3e3e3;
-}
-nav a: hover{
-	background: #f3f3f3
-}
 
 
 
