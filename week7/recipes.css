@@ -1,14 +1,14 @@
 body{
-	background: url(images/bg.png);
+	background: url(../image/bg.png);
 	margin: 0;
 	font-family: "Helvetica", sans-serif;
 	line-height: 1.4em;
 }
-h1, h2, h3{
+h1, h2,h3{
 	margin: 0;
 }
 h1{
-	background: url(images/logo.png) no-repeat;
+	background: url(image/logo.png) no-repeat;
 	height: 100px;
 	width:800px;
 	text-indent: -9000px;
@@ -33,7 +33,7 @@ hgroup{
 }
 #recipes {
 	padding: 15px;
-	background: #fff url(images/yum.jpg) no-repeat;
+	background: #fff url(image/yum.jpg) no-repeat;
 	border-top: 10px solid #222;
 }	
 article {
